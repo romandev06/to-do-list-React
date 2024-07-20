@@ -151,11 +151,6 @@ body {
   box-shadow: 5px 5px 10px var(--btn-change-theme-box-shadow);
   transition: scale 0.2s ease-in-out;
 
-  @media (any-hover: hover) {
-    &:hover {
-      scale: 1.1;
-    }
-  }
 
   @media (max-width: 600px) {
     width: 150px;
@@ -179,7 +174,7 @@ body {
 
   --btn-change-theme-bg-color: rgb(199, 165, 232);
   --btn-change-theme-color: black;
-  --btn-change-theme-box-shadow: white;
+  --btn-change-theme-box-shadow: rgb(132, 0, 255);
 }
 
 body.dark {
@@ -194,5 +189,5 @@ body.dark {
 
   --btn-change-theme-bg-color: rgb(59, 32, 86);
   --btn-change-theme-color: rgb(246, 236, 236);
-  --btn-change-theme-box-shadow: red;
+  --btn-change-theme-box-shadow: white;
 }
