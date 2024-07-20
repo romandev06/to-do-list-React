@@ -1,0 +1,167 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+* {
+  font-family: 'Dosis';
+  color: white;
+  transition: all 1s ease-in-out;
+  overflow-x: hidden;
+}
+
+.App-section {
+  width: 500px;
+  margin-inline: auto;
+}
+
+body {
+  background-color: var(--body-bg-color);
+}
+
+.title {
+  margin-top: 150px;
+  color: var(--title-color);
+  font-size: 35px;
+}
+
+.add-notes__btn {
+  border: 2px solid var(--btn-color-border);
+  background-color: transparent;
+  outline: none;
+  width: 300px;
+  padding-block: 12px;
+  color: var(--btn-color);
+  border-radius: 8px;
+  transition: background-color 0.3s linear, color 0.3s linear;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+
+  &:hover {
+    background-color: var(--btn-bg-color-hover);
+    color: var(--btn-color-hover);
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.enter-notes {
+  border: none;
+  outline: none;
+  background-color: white;
+  width: 300px;
+  color: rgb(124, 58, 237);
+  border-radius: 8px;
+  transition: background-color 0.3s linear, color 0.3s linear;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  color: black;
+  padding: 12px;
+
+  &::placeholder {
+    color: rgb(74, 74, 74);
+  }
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-block: 5px;
+
+  p {
+    padding-left: 12px;
+  }
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-text__btn,
+.remove-text__btn {
+  cursor: pointer;
+  border: none;
+  transition: scale 0.3s ease-in-out;
+
+  &:hover {
+    scale: 0.9;
+  }
+}
+
+.edit-text__btn {
+  background-color: rgb(0, 0, 0);
+}
+
+.remove-text__btn {
+  background-color: rgb(0, 0, 0);
+  margin-right: 8px;
+}
+
+.change-theme {
+  background-color: var(--btn-change-theme-bg-color);
+  color: var(--btn-change-theme-color);
+  text-transform: capitalize;
+  font-size: 18px;
+  width: 200px;
+  padding-block: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  top: 110px;
+  left: 70%;
+  transform: translateX(-50%);
+  box-shadow: 5px 5px 10px var(--btn-change-theme-box-shadow);
+  transition: scale 0.2s ease-in-out;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+
+body {
+  --body-bg-color: rgb(156, 164, 192);
+  --title-color: rgb(17, 3, 3);
+
+  --btn-color-border: rgb(22, 14, 36);
+  --btn-color: rgb(30, 21, 46);
+
+  --btn-color-hover: rgb(229, 207, 207);
+  --btn-bg-color-hover: rgb(23, 8, 37);
+
+  --btn-change-theme-bg-color: rgb(199, 165, 232);
+  --btn-change-theme-color: black;
+  --btn-change-theme-box-shadow: white;
+}
+
+
+
+body.dark {
+  --body-bg-color: rgb(15, 19, 34);
+  --title-color: white;
+
+  --btn-color-border: rgb(124, 58, 237);
+  --btn-color: rgb(124, 58, 237);
+
+  --btn-color-hover: black;
+  --btn-bg-color-hover: blueviolet;
+
+  --btn-change-theme-bg-color: rgb(59, 32, 86);
+  --btn-change-theme-color: rgb(246, 236, 236);
+  --btn-change-theme-box-shadow: red;
+}
+
+
